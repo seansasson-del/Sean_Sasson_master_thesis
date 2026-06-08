@@ -1,0 +1,201 @@
+; ===============================
+; Encoder Calibration Routine
+; X350 Y350 Z360
+; ===============================
+ 
+G21         ; mm units
+G90         ; absolute positioning
+G92 X30 Y30 Z2
+ 
+; -------------------------------
+; Start position
+; -------------------------------
+G1 X0 Y0 Z2 F3000
+G4 S3
+ 
+; ===============================
+; X-DIRECTION GRID SCAN
+; ===============================
+ 
+; ---- Row Y0 ----
+G1 X50
+G4 S1
+G1 X100
+G4 S1
+G1 X150
+G4 S1
+G1 X200
+G4 S1
+G1 X250
+G4 S1
+G1 X300
+G4 S1
+G1 X350
+G4 S1
+ 
+; ---- Row Y100 (reverse) ----
+G1 X350 Y100
+G4 S1
+G1 X300
+G4 S1
+G1 X250
+G4 S1
+G1 X200
+G4 S1
+G1 X150
+G4 S1
+G1 X100
+G4 S1
+G1 X50
+G4 S1
+G1 X0
+G4 S1
+ 
+; ---- Row Y200 ----
+G1 X0 Y200
+G4 S1
+G1 X50
+G4 S1
+G1 X100
+G4 S1
+G1 X150
+G4 S1
+G1 X200
+G4 S1
+G1 X250
+G4 S1
+G1 X300
+G4 S1
+G1 X350
+G4 S1
+ 
+; ---- Row Y300 (reverse) ----
+G1 X350 Y300
+G4 S1
+G1 X300
+G4 S1
+G1 X250
+G4 S1
+G1 X200
+G4 S1
+G1 X150
+G4 S1
+G1 X100
+G4 S1
+G1 X50
+G4 S1
+G1 X0
+G4 S1
+ 
+; ===============================
+; Y-DIRECTION GRID SCAN
+; ===============================
+ 
+G1 X0 Y0
+G4 S1
+ 
+; ---- Column X0 ----
+G1 Y50
+G4 S1
+G1 Y100
+G4 S1
+G1 Y150
+G4 S1
+G1 Y200
+G4 S1
+G1 Y250
+G4 S1
+G1 Y300
+G4 S1
+G1 Y350
+G4 S1
+ 
+; ---- Column X100 (reverse) ----
+G1 X100 Y350
+G4 S1
+G1 Y300
+G4 S1
+G1 Y250
+G4 S1
+G1 Y200
+G4 S1
+G1 Y150
+G4 S1
+G1 Y100
+G4 S1
+G1 Y50
+G4 S1
+G1 Y0
+G4 S1
+ 
+; ---- Column X200 ----
+G1 X200 Y0
+G4 S1
+G1 Y50
+G4 S1
+G1 Y100
+G4 S1
+G1 Y150
+G4 S1
+G1 Y200
+G4 S1
+G1 Y250
+G4 S1
+G1 Y300
+G4 S1
+G1 Y350
+G4 S1
+ 
+; ---- Column X300 (reverse) ----
+G1 X300 Y350
+G4 S1
+G1 Y300
+G4 S1
+G1 Y250
+G4 S1
+G1 Y200
+G4 S1
+G1 Y150
+G4 S1
+G1 Y100
+G4 S1
+G1 Y50
+G4 S1
+G1 Y0
+G4 S1
+ 
+ 
+; ===============================
+; Z-AXIS CALIBRATION
+; ===============================
+ 
+G1 Z2
+G4 S1
+ 
+G1 Z5
+G4 S1
+ 
+G1 Z30
+G4 S1
+G1 Z60
+G4 S1
+G1 Z90
+G4 S1
+G1 Z120
+G4 S1
+G1 Z150
+G4 S1
+G1 Z180
+G4 S1
+G1 Z210
+G4 S1
+G1 Z240
+G4 S1
+G1 Z270
+G4 S1
+G1 Z300
+G4 S1
+G1 Z330
+G4 S1
+G1 Z360
+G4 S1
