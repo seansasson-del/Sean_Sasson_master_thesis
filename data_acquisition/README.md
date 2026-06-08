@@ -1,8 +1,9 @@
 These are the code files related to the data acqusition
 
-1. IR camera code
-2. Data consolidation code
-3. Encoder logging code
-4. Startup G-code
-5. Thermal cloud generation code
-6. Main controller code
+1. Arduino encoder code
+2. IR camera code
+3. Data consolidation code
+4. Encoder logging code
+5. Startup G-code
+6. Thermal cloud generation code
+7. Main controller code
